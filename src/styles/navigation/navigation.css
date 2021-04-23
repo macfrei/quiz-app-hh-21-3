@@ -1,11 +1,11 @@
-.app-header {
+.navigation {
+  display: flex;
+  justify-content: space-evenly;
   background: var(--color-primary);
-  color: var(--color-white);
+  height: 100%;
   padding: 12px;
 }
 
-.app-header__heading {
-  font-weight: 400;
-  font-size: 1.2rem;
-  text-align: center;
+.navigation__link {
+  color: var(--color-white);
 }

@@ -1,7 +1,7 @@
-import StaticHTML from './app-header.html'
+import StaticHTML from './navigation.html'
 
 export default {
-  title: 'app-header',
+  title: 'navigation',
 }
 
 export const HTML = () => StaticHTML
