@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bookmark</title>
     <link rel="icon" type="image/png" href="assets/favicon.png" />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
     <header class="app-header">
@@ -18,9 +18,10 @@
           class="quiz-card__bookmark quiz-card__bookmark--selected"
           aria-label="Add bookmark"
         ></div>
-        <h2 class="quiz-card__question">Question</h2>
+        <h2 class="quiz-card__question">Question:</h2>
+        <p class="quiz-card__text">What is CSS?</p>
         <button class="quiz-card__button">Show answer</button>
-        <p class="quiz-card__answer">This is a long answer!</p>
+        <p class="quiz-card__text">This is a long answer!</p>
         <ul class="quiz-card__tag-list">
           <li>CSS</li>
           <li>HTML</li>
@@ -34,9 +35,10 @@
           class="quiz-card__bookmark quiz-card__bookmark--selected"
           aria-label="Add bookmark"
         ></div>
-        <h2 class="quiz-card__question">Question</h2>
+        <h2 class="quiz-card__question">Question:</h2>
+        <p class="quiz-card__text">What is storybook?</p>
         <button class="quiz-card__button">Show answer</button>
-        <p class="quiz-card__answer">This is a long answer!</p>
+        <p class="quiz-card__text">This is a long answer!</p>
         <ul class="quiz-card__tag-list">
           <li>CSS</li>
           <li>HTML</li>
@@ -44,11 +46,11 @@
         </ul>
       </section>
     </main>
-    <footer>
-      <nav class="navigation">
-        <a class="navigation__link" href="/">Home</a>
-        <a class="navigation__link" href="/bookmark.html">Bookmark</a>
-      </nav>
-    </footer>
+
+    <nav class="navigation">
+      <a class="navigation__link" href="/">Home</a>
+      <a class="navigation__link" href="/bookmark.html">Bookmark</a>
+      <a class="navigation__link" href="/create.html">Create</a>
+    </nav>
   </body>
 </html>
