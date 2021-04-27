@@ -22,26 +22,8 @@ h3 {
 }
 
 input,
+textarea,
 button {
-  font-size: 1em;
-}
-
-.app-main {
-  display: grid;
-  grid-gap: 26px;
-  padding: 16px;
-  overflow-y: scroll;
-}
-
-.app-main > *:last-child {
-  position: relative;
-}
-.app-main > *:last-child::after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 100%;
-  left: 0;
   width: 100%;
-  height: 20px;
+  font-size: 1em;
 }
