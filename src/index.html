@@ -6,22 +6,34 @@
     <title>Quiz App</title>
     <link rel="icon" type="image/png" href="assets/favicon.png" />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <script defer type="module" src="./index.js"></script>
   </head>
   <body>
-    <header class="app-header">
+    <header class="app-header js-page-home-header">
       <h1 class="app-header__heading">Quiz App</h1>
     </header>
-    <main class="app-main">
+    <header class="app-header js-page-bookmark-header hidden">
+      <h1 class="app-header__heading">Bookmark</h1>
+    </header>
+    <header class="app-header js-page-create-header hidden">
+      <h1 class="app-header__heading">Create Cards</h1>
+    </header>
+
+    <main class="app-main js-page-home">
       <section class="quiz-card">
         <div
           role="button"
-          class="quiz-card__bookmark quiz-card__bookmark--selected"
+          class="quiz-card__bookmark quiz-card__bookmark--selected js-quiz-card-bookmark"
           aria-label="Add bookmark"
         ></div>
         <h2 class="quiz-card__question">Question:</h2>
         <p class="quiz-card__text">What is CSS?</p>
-        <button class="quiz-card__button">Show answer</button>
-        <p class="quiz-card__text">This is a long answer!</p>
+        <button class="quiz-card__button js-quiz-card-button">
+          Show answer
+        </button>
+        <p class="quiz-card__text js-quiz-card-answer hidden">
+          This is a long answer!
+        </p>
         <ul class="quiz-card__tag-list">
           <li>CSS</li>
           <li>HTML</li>
@@ -38,7 +50,7 @@
         <h2 class="quiz-card__question">Question:</h2>
         <p class="quiz-card__text">What is HTML?</p>
         <button class="quiz-card__button">Show answer</button>
-        <p class="quiz-card__text">This is a long answer!</p>
+        <p class="quiz-card__text hidden">This is a long answer!</p>
         <ul class="quiz-card__tag-list">
           <li>CSS</li>
           <li>HTML</li>
@@ -55,7 +67,7 @@
         <h2 class="quiz-card__question">Question:</h2>
         <p class="quiz-card__text">What is storybook?</p>
         <button class="quiz-card__button">Show answer</button>
-        <p class="quiz-card__text">This is a long answer!</p>
+        <p class="quiz-card__text hidden">This is a long answer!</p>
         <ul class="quiz-card__tag-list">
           <li>CSS</li>
           <li>HTML</li>
@@ -64,10 +76,66 @@
       </section>
     </main>
 
+    <main class="app-main js-page-bookmark hidden">
+      <section class="quiz-card">
+        <div
+          role="button"
+          class="quiz-card__bookmark quiz-card__bookmark--selected"
+          aria-label="Add bookmark"
+        ></div>
+        <h2 class="quiz-card__question">Question:</h2>
+        <p class="quiz-card__text">What is CSS?</p>
+        <button class="quiz-card__button">Show answer</button>
+        <p class="quiz-card__text hidden">This is a long answer!</p>
+        <ul class="quiz-card__tag-list">
+          <li>CSS</li>
+          <li>HTML</li>
+          <li>Storybook</li>
+        </ul>
+      </section>
+
+      <section class="quiz-card">
+        <div
+          role="button"
+          class="quiz-card__bookmark quiz-card__bookmark--selected"
+          aria-label="Add bookmark"
+        ></div>
+        <h2 class="quiz-card__question">Question:</h2>
+        <p class="quiz-card__text">What is storybook?</p>
+        <button class="quiz-card__button">Show answer</button>
+        <p class="quiz-card__text hidden">This is a long answer!</p>
+        <ul class="quiz-card__tag-list">
+          <li>CSS</li>
+          <li>HTML</li>
+          <li>Storybook</li>
+        </ul>
+      </section>
+    </main>
+
+    <main class="js-page-create hidden">
+      <form class="form">
+        <label>
+          Add a question:
+          <input type="text" />
+        </label>
+        <label>
+          Add an answer:
+          <textarea cols="30" rows="10"></textarea>
+        </label>
+        <label>
+          Add tags:
+          <input type="text" />
+        </label>
+        <button>Create card</button>
+      </form>
+    </main>
+
     <nav class="navigation">
-      <a class="navigation__link" href="/">Home</a>
-      <a class="navigation__link" href="/bookmark.html">Bookmark</a>
-      <a class="navigation__link" href="/create.html">Create</a>
+      <button class="navigation__link navigation__link--active js-home-button">
+        Home
+      </button>
+      <button class="navigation__link js-bookmark-button">Bookmark</button>
+      <button class="navigation__link js-create-button">Create</button>
     </nav>
   </body>
 </html>
