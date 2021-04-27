@@ -5,10 +5,6 @@
   position: relative;
 }
 
-.quiz-card:first-child {
-  margin-top: 20px;
-}
-
 .quiz-card__bookmark {
   position: absolute;
   top: -12px;
