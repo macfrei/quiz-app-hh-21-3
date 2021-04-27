@@ -1,17 +1,5 @@
-const buttonHome = document.querySelector('.js-home-button')
-const buttonBookmark = document.querySelector('.js-bookmark-button')
-const buttonCreate = document.querySelector('.js-create-button')
-const buttonQuizCard = document.querySelector('.quiz-card__button')
-const bookmark = document.querySelector('.quiz-card__bookmark')
-
-const homePage = document.querySelector('.page-home')
-const bookmarkPage = document.querySelector('.page-bookmark')
-const createPage = document.querySelector('.page-create')
-
-const homePageHeader = document.querySelector('.page-home-header')
-const bookmarkPageHeader = document.querySelector('.page-bookmark-header')
-const createPageHeader = document.querySelector('.page-create-header')
-
+const buttonQuizCard = document.querySelector('.js-quiz-card-button')
+const bookmark = document.querySelector('.js-quiz-card-bookmark')
 const quizCardAnswer = document.querySelector('.js-quiz-card-answer')
 
 buttonQuizCard.addEventListener('click', () => {
@@ -21,6 +9,18 @@ buttonQuizCard.addEventListener('click', () => {
 bookmark.addEventListener('click', () => {
   bookmark.classList.toggle('quiz-card__bookmark--selected')
 })
+
+const buttonHome = document.querySelector('.js-home-button')
+const buttonBookmark = document.querySelector('.js-bookmark-button')
+const buttonCreate = document.querySelector('.js-create-button')
+
+const homePage = document.querySelector('.js-page-home')
+const bookmarkPage = document.querySelector('.js-page-bookmark')
+const createPage = document.querySelector('.js-page-create')
+
+const homePageHeader = document.querySelector('.js-page-home-header')
+const bookmarkPageHeader = document.querySelector('.js-page-bookmark-header')
+const createPageHeader = document.querySelector('.js-page-create-header')
 
 buttonHome.addEventListener('click', () => {
   homePage.classList.remove('hidden')
