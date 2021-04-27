@@ -1,6 +1,35 @@
-.card {
-  display: grid;
-  grid-gap: 16px;
+.quiz-card {
+  background-color: lightblue;
   padding: 16px;
-  background-color: azure;
+  border-radius: 8px;
+  position: relative;
+}
+
+.quiz-card__bookmark {
+  position: absolute;
+  top: -12px;
+  right: 8px;
+  border: 20px solid lightgray;
+  border-bottom-color: transparent;
+  height: 30px;
+}
+
+.quiz-card__bookmark--selected {
+  border: 20px solid hotpink;
+  border-bottom-color: transparent;
+}
+
+.quiz-card__tag-list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.quiz-card__tag-list li {
+  background-color: steelblue;
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
 }

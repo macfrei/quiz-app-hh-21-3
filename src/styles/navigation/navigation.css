@@ -1,0 +1,11 @@
+.navigation {
+  display: flex;
+  justify-content: space-evenly;
+  background: var(--color-primary);
+  height: 100%;
+  padding: 12px;
+}
+
+.navigation__link {
+  color: var(--color-white);
+}

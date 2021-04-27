@@ -1,0 +1,6 @@
+.form {
+  display: grid;
+  align-items: start;
+  grid-gap: 16px;
+  padding: 32px;
+}
